@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace Onela
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
 
-        private void button_addContacts_Click(object sender, EventArgs e)
+        private void button_cancelAddContacts_Click(object sender, EventArgs e)
         {
-            Form2 Form2 = new Form2();
-            Form2.Show();
+            Form1 Form1 = new Form1();
+            Form1.Show();
         }
     }
 }

@@ -46,7 +46,6 @@
             this.label_contacts.Size = new System.Drawing.Size(82, 24);
             this.label_contacts.TabIndex = 1;
             this.label_contacts.Text = "Contacts";
-            this.label_contacts.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // TextBox_search
             // 
@@ -65,8 +64,10 @@
             this.button_addContacts.Name = "button_addContacts";
             this.button_addContacts.Size = new System.Drawing.Size(23, 24);
             this.button_addContacts.TabIndex = 3;
+            this.button_addContacts.Tag = "";
             this.button_addContacts.Text = "➕";
             this.button_addContacts.UseVisualStyleBackColor = true;
+            this.button_addContacts.Click += new System.EventHandler(this.button_addContacts_Click);
             // 
             // pictureBox_user
             // 
