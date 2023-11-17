@@ -1,6 +1,6 @@
 ﻿namespace Onela
 {
-    partial class Form1
+    partial class Frm1
     {
         /// <summary>
         /// Required designer variable.
@@ -89,14 +89,14 @@
             // 
             // button_userIMG
             // 
-            this.button_userIMG.Location = new System.Drawing.Point(71, 106);
+            this.button_userIMG.Location = new System.Drawing.Point(74, 127);
             this.button_userIMG.Name = "button_userIMG";
             this.button_userIMG.Size = new System.Drawing.Size(53, 22);
             this.button_userIMG.TabIndex = 6;
             this.button_userIMG.Text = "Modifier";
             this.button_userIMG.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Frm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -107,8 +107,9 @@
             this.Controls.Add(this.button_addContacts);
             this.Controls.Add(this.TextBox_search);
             this.Controls.Add(this.label_contacts);
-            this.Name = "Form1";
+            this.Name = "Frm1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_user)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

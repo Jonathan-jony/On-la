@@ -1,6 +1,6 @@
 ﻿namespace Onela
 {
-    partial class Form2
+    partial class Frm2
     {
         /// <summary>
         /// Required designer variable.
@@ -48,7 +48,6 @@
             this.button_cancelAddContacts.Text = "Annuler";
             this.button_cancelAddContacts.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.button_cancelAddContacts.UseVisualStyleBackColor = true;
-            this.button_cancelAddContacts.Click += new System.EventHandler(this.button_cancelAddContacts_Click);
             // 
             // button_createContacts
             // 
@@ -59,6 +58,7 @@
             this.button_createContacts.Text = "Créer";
             this.button_createContacts.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.button_createContacts.UseVisualStyleBackColor = true;
+            this.button_createContacts.Click += new System.EventHandler(this.button_createContacts_Click);
             // 
             // label_newContact
             // 
@@ -79,6 +79,7 @@
             this.textBox_firstnameNewContacts.Size = new System.Drawing.Size(123, 24);
             this.textBox_firstnameNewContacts.TabIndex = 4;
             this.textBox_firstnameNewContacts.Text = "Prénom";
+            this.textBox_firstnameNewContacts.TextChanged += new System.EventHandler(this.textBox_firstnameNewContacts_TextChanged);
             // 
             // pictureBox_newContacts
             // 
@@ -118,7 +119,7 @@
             this.textBox_numberNewContacts.TabIndex = 8;
             this.textBox_numberNewContacts.Text = "Numéro ";
             // 
-            // Form2
+            // Frm2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -131,7 +132,7 @@
             this.Controls.Add(this.label_newContact);
             this.Controls.Add(this.button_createContacts);
             this.Controls.Add(this.button_cancelAddContacts);
-            this.Name = "Form2";
+            this.Name = "Frm2";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_newContacts)).EndInit();
             this.ResumeLayout(false);
