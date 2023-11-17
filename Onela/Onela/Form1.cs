@@ -19,8 +19,9 @@ namespace Onela
 
         private void button_addContacts_Click(object sender, EventArgs e)
         {
-            Form2 Form2 = new Form2();
-            Form2.Show();
+            this.Hide();
+            Form2 form2 = new Form2();
+            form2.Show();
         }
     }
 }

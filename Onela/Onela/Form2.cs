@@ -19,8 +19,9 @@ namespace Onela
 
         private void button_cancelAddContacts_Click(object sender, EventArgs e)
         {
-            Form1 Form1 = new Form1();
-            Form1.Show();
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.Show();
         }
     }
 }
