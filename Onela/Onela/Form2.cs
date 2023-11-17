@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace Onela
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
 
-        private void button_addContacts_Click(object sender, EventArgs e)
+        private void button_cancelAddContacts_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 form2 = new Form2();
-            form2.Show();
+            Form1 form1 = new Form1();
+            form1.Show();
         }
     }
 }
