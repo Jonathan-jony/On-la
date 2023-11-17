@@ -34,6 +34,9 @@
             this.pictureBox_user = new System.Windows.Forms.PictureBox();
             this.label_user = new System.Windows.Forms.Label();
             this.button_userIMG = new System.Windows.Forms.Button();
+            this.label_separateLine = new System.Windows.Forms.Label();
+            this.button_displayContact = new System.Windows.Forms.Button();
+            this.label_nameContact1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_user)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,18 +92,50 @@
             // 
             // button_userIMG
             // 
-            this.button_userIMG.Location = new System.Drawing.Point(74, 127);
+            this.button_userIMG.Location = new System.Drawing.Point(71, 106);
             this.button_userIMG.Name = "button_userIMG";
             this.button_userIMG.Size = new System.Drawing.Size(53, 22);
             this.button_userIMG.TabIndex = 6;
             this.button_userIMG.Text = "Modifier";
             this.button_userIMG.UseVisualStyleBackColor = true;
             // 
+            // label_separateLine
+            // 
+            this.label_separateLine.AutoSize = true;
+            this.label_separateLine.Location = new System.Drawing.Point(1, 152);
+            this.label_separateLine.Name = "label_separateLine";
+            this.label_separateLine.Size = new System.Drawing.Size(295, 13);
+            this.label_separateLine.TabIndex = 7;
+            this.label_separateLine.Text = "________________________________________________";
+            // 
+            // button_displayContact
+            // 
+            this.button_displayContact.Enabled = false;
+            this.button_displayContact.Location = new System.Drawing.Point(14, 200);
+            this.button_displayContact.Name = "button_displayContact";
+            this.button_displayContact.Size = new System.Drawing.Size(53, 22);
+            this.button_displayContact.TabIndex = 9;
+            this.button_displayContact.Text = "Afficher";
+            this.button_displayContact.UseVisualStyleBackColor = true;
+            // 
+            // label_nameContact1
+            // 
+            this.label_nameContact1.AutoSize = true;
+            this.label_nameContact1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_nameContact1.Location = new System.Drawing.Point(13, 182);
+            this.label_nameContact1.Name = "label_nameContact1";
+            this.label_nameContact1.Size = new System.Drawing.Size(54, 15);
+            this.label_nameContact1.TabIndex = 10;
+            this.label_nameContact1.Text = "[Contact]";
+            // 
             // Frm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(299, 560);
+            this.Controls.Add(this.label_nameContact1);
+            this.Controls.Add(this.button_displayContact);
+            this.Controls.Add(this.label_separateLine);
             this.Controls.Add(this.button_userIMG);
             this.Controls.Add(this.label_user);
             this.Controls.Add(this.pictureBox_user);
@@ -123,6 +158,9 @@
         private System.Windows.Forms.PictureBox pictureBox_user;
         private System.Windows.Forms.Label label_user;
         private System.Windows.Forms.Button button_userIMG;
+        private System.Windows.Forms.Label label_separateLine;
+        private System.Windows.Forms.Button button_displayContact;
+        private System.Windows.Forms.Label label_nameContact1;
     }
 }
 
