@@ -4,13 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-<<<<<<< HEAD
-namespace Onela
-{
-    internal class contact
-    {
-=======
-
 namespace Onela
 {
     public class Contact
@@ -58,6 +51,5 @@ namespace Onela
                 _numberphone = value;
             }
         }
->>>>>>> feature/form
     }
 }

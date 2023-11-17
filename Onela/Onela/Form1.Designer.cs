@@ -37,6 +37,7 @@
             this.label_separateLine = new System.Windows.Forms.Label();
             this.button_displayContact = new System.Windows.Forms.Button();
             this.label_nameContact1 = new System.Windows.Forms.Label();
+            this.label_number = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_user)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,7 +112,7 @@
             // button_displayContact
             // 
             this.button_displayContact.Enabled = false;
-            this.button_displayContact.Location = new System.Drawing.Point(14, 200);
+            this.button_displayContact.Location = new System.Drawing.Point(205, 182);
             this.button_displayContact.Name = "button_displayContact";
             this.button_displayContact.Size = new System.Drawing.Size(53, 22);
             this.button_displayContact.TabIndex = 9;
@@ -128,11 +129,21 @@
             this.label_nameContact1.TabIndex = 10;
             this.label_nameContact1.Text = "[Contact]";
             // 
+            // label_number
+            // 
+            this.label_number.AutoSize = true;
+            this.label_number.Location = new System.Drawing.Point(16, 201);
+            this.label_number.Name = "label_number";
+            this.label_number.Size = new System.Drawing.Size(81, 13);
+            this.label_number.TabIndex = 11;
+            this.label_number.Text = "[NumberPhone]";
+            // 
             // Frm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(299, 560);
+            this.Controls.Add(this.label_number);
             this.Controls.Add(this.label_nameContact1);
             this.Controls.Add(this.button_displayContact);
             this.Controls.Add(this.label_separateLine);
@@ -161,6 +172,7 @@
         private System.Windows.Forms.Label label_separateLine;
         private System.Windows.Forms.Button button_displayContact;
         private System.Windows.Forms.Label label_nameContact1;
+        private System.Windows.Forms.Label label_number;
     }
 }
 

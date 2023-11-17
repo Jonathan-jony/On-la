@@ -21,19 +21,15 @@ namespace Onela
 
         private void button_addContacts_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            this.Hide();
-            Form2 form2 = new Form2();
-            form2.Show();
-=======
             Frm2 frm2 = new Frm2();
             frm2.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            label_user.Text = Frm2._firstName;
->>>>>>> feature/form
+            label_nameContact1.Text = Frm2._firstName + " " + Frm2._lastName;
+            label_number.Text = Frm2._numberPhone;
         }
+
     }
 }

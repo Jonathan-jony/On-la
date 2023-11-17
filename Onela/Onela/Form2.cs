@@ -29,17 +29,11 @@ namespace Onela
 
         private void button_createContacts_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            this.Hide();
-            Form1 form1 = new Form1();
-            form1.Show();
-=======
             _firstName = textBox_firstnameNewContacts.Text;
             _lastName = textBox_lastnameNewContacts.Text;
             _numberPhone = textBox_numberNewContacts.Text;
             Frm1 frm1 = new Frm1();
             frm1.Show();
->>>>>>> feature/form
         }
     }
 }
