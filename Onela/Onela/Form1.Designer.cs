@@ -123,7 +123,7 @@
             // 
             this.label_nameContact1.AutoSize = true;
             this.label_nameContact1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_nameContact1.Location = new System.Drawing.Point(13, 182);
+            this.label_nameContact1.Location = new System.Drawing.Point(16, 182);
             this.label_nameContact1.Name = "label_nameContact1";
             this.label_nameContact1.Size = new System.Drawing.Size(54, 15);
             this.label_nameContact1.TabIndex = 10;
