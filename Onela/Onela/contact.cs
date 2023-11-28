@@ -18,7 +18,7 @@ namespace Onela
              _lastname = Lastname;
              _numberphone = numberPhone;
         }
-        public static string Firstname
+        public string Firstname
         {
             get 
             {

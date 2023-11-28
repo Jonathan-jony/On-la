@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace Onela
 {
-    internal class listContacts
+    public class ListContacts
     {
+        private List<Contact> contacts;
+
+        public ListContacts()
+        {
+            contacts = new List<Contact>();
+        }
+        public void addContact(Contact contact)
+        {
+            contacts.Add(contact);
+        }
+        public List<Contact> getContacts()
+        {
+            return contacts;
+        }
     }
 }
