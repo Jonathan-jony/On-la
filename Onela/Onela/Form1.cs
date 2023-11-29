@@ -32,25 +32,28 @@ namespace Onela
             frm2.Show();
         }
 
-        public void UpdateListBox(ListContacts)
+        public void UpdateListBox(ListContacts listContacts)
         {
 
-            if (ListContacts.getContacts() == null)
+            if (listContacts.getContacts() == null)
             {
                 label1.Visible = true;
                 listBox1.Visible = false;
             }
-            foreach (Contact contact in ListContacts.getContacts())
+            else
             {
-                label1.Visible = false;
-                listBox1.Visible = true;
-                listBox1.Items.Add(contact.Firstname + " " + contact.Lastname);
+                foreach (Contact contact in listContacts.getContacts())
+                {
+                    label1.Visible = false;
+                    listBox1.Visible = true;
+                    listBox1.Items.Add(contact.Firstname + " " + contact.Lastname + " " + contact.Numberphone);
+                }
             }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            UpdateListBox(ListContacts);
+            UpdateListBox(listContacts);
         }
     }
 }
