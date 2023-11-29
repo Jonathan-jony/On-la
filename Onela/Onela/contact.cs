@@ -8,47 +8,64 @@ namespace Onela
 {
     public class Contact
     {
-        private static string _firstname;
-        private string _lastname;
-        private string _numberphone;
+        private string firstName;
+        private string lastName;
+        private string number;
+        private string group = null;
 
-        public Contact(string Firstname, string Lastname, string numberPhone)
+        public Contact(string firstName,string lastName, string number, string group) 
         {
-            _firstname = Firstname;
-            _lastname = Lastname;
-            _numberphone = numberPhone;
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.number = number;
+            this.group = group;
         }
-        public string Firstname
+
+        public string FirstName
         {
             get
             {
-                return _firstname;
+                return this.firstName;
             }
             set
             {
-                _firstname = value;
+                this.firstName= value;
             }
         }
-        public string Lastname
+
+        public string LastName
         {
             get
             {
-                return _lastname;
+                return this.lastName;
             }
             set
             {
-                _lastname = value;
+               this.lastName= value;
             }
         }
-        public string Numberphone
+
+        public string Number
         {
             get
             {
-                return _numberphone;
+                return this.number;
             }
             set
             {
-                _numberphone = value;
+                this.number= value;
+            }
+        }
+
+        public string Group
+        {
+            get
+            {
+                return this.group;
+            }
+            set
+            {
+                this.group = value;
             }
         }
     }
