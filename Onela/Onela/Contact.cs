@@ -8,7 +8,7 @@ namespace Onela
 {
     public class Contact
     {
-        private string firstName;
+        private string firstName;§
         private string lastName;
         private string number;
         private string group = null;
