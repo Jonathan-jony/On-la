@@ -1,6 +1,6 @@
 ﻿namespace Onela
 {
-    partial class Form1
+    partial class Frm1
     {
         /// <summary>
         /// Required designer variable.
@@ -34,6 +34,10 @@
             this.pictureBox_user = new System.Windows.Forms.PictureBox();
             this.label_user = new System.Windows.Forms.Label();
             this.button_userIMG = new System.Windows.Forms.Button();
+            this.label_separateLine = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_user)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,18 +100,48 @@
             this.button_userIMG.Text = "Modifier";
             this.button_userIMG.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // label_separateLine
+            // 
+            this.label_separateLine.AutoSize = true;
+            this.label_separateLine.Location = new System.Drawing.Point(1, 152);
+            this.label_separateLine.Name = "label_separateLine";
+            this.label_separateLine.Size = new System.Drawing.Size(295, 13);
+            this.label_separateLine.TabIndex = 7;
+            this.label_separateLine.Text = "________________________________________________";
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(19, 234);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(239, 264);
+            this.listBox1.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(69, 181);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 25);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Aucun contact";
+            // 
+            // Frm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(299, 560);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.label_separateLine);
             this.Controls.Add(this.button_userIMG);
             this.Controls.Add(this.label_user);
             this.Controls.Add(this.pictureBox_user);
             this.Controls.Add(this.button_addContacts);
             this.Controls.Add(this.TextBox_search);
             this.Controls.Add(this.label_contacts);
-            this.Name = "Form1";
+            this.Name = "Frm1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_user)).EndInit();
             this.ResumeLayout(false);
@@ -122,6 +156,10 @@
         private System.Windows.Forms.PictureBox pictureBox_user;
         private System.Windows.Forms.Label label_user;
         private System.Windows.Forms.Button button_userIMG;
+        private System.Windows.Forms.Label label_separateLine;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

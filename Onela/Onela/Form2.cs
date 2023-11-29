@@ -10,18 +10,32 @@ using System.Windows.Forms;
 
 namespace Onela
 {
-    public partial class Form2 : Form
+    public partial class Frm2 : Form
     {
-        public Form2()
+        public ListContacts listContacts = new ListContacts();
+        public Contact _contact;
+        public Frm1 GetFrm1;
+        public static string _firstName = "";
+        public static string _lastName = "";
+        public static string _numberPhone = "";
+
+        public Frm2(Frm1 frm1)
         {
             InitializeComponent();
+            GetFrm1 = frm1;
         }
-
-        private void button_cancelAddContacts_Click(object sender, EventArgs e)
+        private void button_createContacts_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form1 form1 = new Form1();
-            form1.Show();
+            _firstName = textBox_firstnameNewContacts.Text;
+            _lastName = textBox_lastnameNewContacts.Text;
+            _numberPhone = textBox_numberNewContacts.Text;
+
+            _contact = new Contact(_firstName, _lastName, _numberPhone);
+            listContacts.addContact(_contact);
+
+            this.Close();
+            GetFrm1.Show();
+            GetFrm1.UpdateListBox(listContacts);
         }
     }
 }
