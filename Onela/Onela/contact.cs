@@ -8,47 +8,64 @@ namespace Onela
 {
     public class Contact
     {
-        private static string _firstname;
-        private string _lastname;
-        private string _numberphone;
+        private string firstName;
+        private string lastName;
+        private string number;
+        private string group = null;
 
-        public Contact(string Firstname, string Lastname, string numberPhone) 
-        { 
-             _firstname = Firstname;
-             _lastname = Lastname;
-             _numberphone = numberPhone;
-        }
-        public string Firstname
+        public Contact(string firstName,string lastName, string number, string group) 
         {
-            get 
-            {
-                return _firstname;
-            }
-            set
-            {
-                _firstname = value;
-            }
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.number = number;
+            this.group = group;
         }
-        public string Lastname
-        {
-            get 
-            {
-                return _lastname;
-            }
-            set
-            {
-                _lastname= value;
-            }
-        }
-        public string Numberphone
+
+        public string FirstName
         {
             get
             {
-                return _numberphone;
+                return this.firstName;
             }
             set
             {
-                _numberphone = value;
+                this.firstName= value;
+            }
+        }
+
+        public string LastName
+        {
+            get
+            {
+                return this.lastName;
+            }
+            set
+            {
+               this.lastName= value;
+            }
+        }
+
+        public string Number
+        {
+            get
+            {
+                return this.number;
+            }
+            set
+            {
+                this.number= value;
+            }
+        }
+
+        public string Group
+        {
+            get
+            {
+                return this.group;
+            }
+            set
+            {
+                this.group = value;
             }
         }
     }
