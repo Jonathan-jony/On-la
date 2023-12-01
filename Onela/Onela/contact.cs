@@ -3,69 +3,50 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace Onela
 {
     public class Contact
     {
-        private string firstName;§
-        private string lastName;
-        private string number;
-        private string group = null;
-
-        public Contact(string firstName,string lastName, string number, string group) 
+        private static string _firstname;
+        private string _lastname;
+        private string _numberphone;
+        public Contact(string Firstname, string Lastname, string numberPhone)
         {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.number = number;
-            this.group = group;
+            _firstname = Firstname;
+            _lastname = Lastname;
+            _numberphone = numberPhone;
         }
-
-        public string FirstName
+        public string Firstname
         {
             get
             {
-                return this.firstName;
+                return _firstname;
             }
             set
             {
-                this.firstName= value;
+                _firstname = value;
             }
         }
-
-        public string LastName
+        public string Lastname
         {
             get
             {
-                return this.lastName;
+                return _lastname;
             }
             set
             {
-               this.lastName= value;
+                _lastname = value;
             }
         }
-
-        public string Number
+        public string Numberphone
         {
             get
             {
-                return this.number;
+                return _numberphone;
             }
             set
             {
-                this.number= value;
-            }
-        }
-
-        public string Group
-        {
-            get
-            {
-                return this.group;
-            }
-            set
-            {
-                this.group = value;
+                _numberphone = value;
             }
         }
     }
