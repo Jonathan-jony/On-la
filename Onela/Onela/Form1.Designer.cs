@@ -35,9 +35,9 @@
             this.label_user = new System.Windows.Forms.Label();
             this.button_userIMG = new System.Windows.Forms.Button();
             this.label_separateLine = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.label1 = new System.Windows.Forms.Label();
+            this.tabDisplayContact = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_user)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,14 +109,6 @@
             this.label_separateLine.TabIndex = 7;
             this.label_separateLine.Text = "________________________________________________";
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(19, 234);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(239, 264);
-            this.listBox1.TabIndex = 12;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -127,13 +119,26 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Aucun contact";
             // 
+            // tabDisplayContact
+            // 
+            this.tabDisplayContact.ColumnCount = 2;
+            this.tabDisplayContact.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tabDisplayContact.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tabDisplayContact.Location = new System.Drawing.Point(16, 209);
+            this.tabDisplayContact.Name = "tabDisplayContact";
+            this.tabDisplayContact.RowCount = 2;
+            this.tabDisplayContact.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tabDisplayContact.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tabDisplayContact.Size = new System.Drawing.Size(271, 254);
+            this.tabDisplayContact.TabIndex = 14;
+            // 
             // Frm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(299, 560);
+            this.Controls.Add(this.tabDisplayContact);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label_separateLine);
             this.Controls.Add(this.button_userIMG);
             this.Controls.Add(this.label_user);
@@ -157,9 +162,9 @@
         private System.Windows.Forms.Label label_user;
         private System.Windows.Forms.Button button_userIMG;
         private System.Windows.Forms.Label label_separateLine;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.FontDialog fontDialog1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TableLayoutPanel tabDisplayContact;
     }
 }
 

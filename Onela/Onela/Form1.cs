@@ -24,6 +24,10 @@ namespace Onela
         public Frm1()
         {
             InitializeComponent();
+
+            // Paramétrer le tableau
+            tabDisplayContact.ColumnCount = 2;
+            tabDisplayContact.RowCount = 3;
         }
 
         private void button_addContacts_Click(object sender, EventArgs e)
@@ -32,28 +36,47 @@ namespace Onela
             frm2.Show();
         }
 
-        public void UpdateListBox(ListContacts listContacts)
+        private Label CreateLabel(string text)
+        {
+            Label label = new Label
+            {
+                Text = text,
+                BorderStyle = BorderStyle.Fixed3D,
+                AutoSize = true
+        };
+            return label;
+        }
+
+        public void UpdateTab(ListContacts listContacts)
         {
 
             if (listContacts.getContacts() == null)
             {
                 label1.Visible = true;
-                listBox1.Visible = false;
+                tabDisplayContact.Visible = false;
             }
             else
             {
                 foreach (Contact contact in listContacts.getContacts())
                 {
                     label1.Visible = false;
-                    listBox1.Visible = true;
-                    listBox1.Items.Add(contact.Firstname + " " + contact.Lastname + " " + contact.Numberphone);
+                    tabDisplayContact.Visible = true;
+                    tabDisplayContact.Controls.Add(CreateLabel("Prénom:"), 0, 0);
+                    tabDisplayContact.Controls.Add(CreateLabel(contact.Firstname), 1, 0);
+
+                    tabDisplayContact.Controls.Add(CreateLabel("Nom:"), 0, 1);
+                    tabDisplayContact.Controls.Add(CreateLabel(contact.Lastname), 1, 1);
+
+                    tabDisplayContact.Controls.Add(CreateLabel("Numéro de téléphone:"), 0, 2);
+                    tabDisplayContact.Controls.Add(CreateLabel(contact.Numberphone), 1, 2);
                 }
             }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            UpdateListBox(listContacts);
+            UpdateTab(listContacts);
         }
+
     }
 }

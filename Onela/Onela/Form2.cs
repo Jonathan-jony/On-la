@@ -35,7 +35,7 @@ namespace Onela
 
             this.Close();
             GetFrm1.Show();
-            GetFrm1.UpdateListBox(listContacts);
+            GetFrm1.UpdateTab(listContacts);
         }
     }
 }
