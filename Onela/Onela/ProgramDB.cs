@@ -1,23 +1,14 @@
 ﻿using MySql.Data.MySqlClient;
+using System.Collections.Generic;
 
-namespace PrototypeDbConnector
+namespace Onela
 {
-    internal class Program
+    public class DBConnector
     {
         //The collection of results
-        static List<string> customers = new List<string>();
+        private static List<string> customers = new List<string>();
 
-        static void Main(string[] args)
-        {
-            customers = ExecuteQuerySelect();
-
-            foreach (string customer in customers)
-            {
-                Console.WriteLine(customer);
-            }
-        }
-
-        static private List<string> ExecuteQuerySelect()
+        public List<string> ExecuteQuerySelect()
         {
             List<string> queryResults = new List<string>();
 
