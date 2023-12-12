@@ -7,9 +7,9 @@ namespace Onela
 {
     public class Contact
     {
-        private static string _firstname;
-        private string _lastname;
-        private string _numberphone;
+        public string _firstname;
+        public string _lastname;
+        public string _numberphone;
         public Contact(string Firstname, string Lastname, string numberPhone)
         {
             _firstname = Firstname;

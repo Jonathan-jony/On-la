@@ -15,14 +15,15 @@ namespace Onela
         public ListContacts listContacts = new ListContacts();
         public Contact _contact;
         public Frm1 GetFrm1;
+        private DBConnector connector;
         public static string _firstName = "";
         public static string _lastName = "";
         public static string _numberPhone = "";
 
-        public Frm2(Frm1 frm1)
+        public Frm2()
         {
             InitializeComponent();
-            GetFrm1 = frm1;
+            connector = new DBConnector();
         }
         private void button_createContacts_Click(object sender, EventArgs e)
         {
@@ -31,11 +32,15 @@ namespace Onela
             _numberPhone = textBox_numberNewContacts.Text;
 
             _contact = new Contact(_firstName, _lastName, _numberPhone);
+
+            connector.ExecuteQueryInsert(_contact);
+
             listContacts.addContact(_contact);
 
             this.Close();
-            GetFrm1.Show();
-            GetFrm1.UpdateListBox(listContacts);
+
+            Frm1 frm1 = new Frm1();
+            frm1.Show();
         }
     }
 }
